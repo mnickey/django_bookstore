@@ -118,4 +118,4 @@ pip-selfcheck.json
 
 
 #SQLite3 Database
-Development/django_bookstore/db.sqlite3
+*.sqlite3
