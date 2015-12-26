@@ -117,5 +117,5 @@ pyvenv.cfg
 pip-selfcheck.json
 
 
-#SQLite3 Database
+#SQLite3 Databasels
 *.sqlite3
