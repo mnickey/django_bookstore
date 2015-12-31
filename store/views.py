@@ -9,5 +9,8 @@ def store(request):
     context = {
         'count': count,
     }
+    request.session['location'] = "Unknown"
+    if request.user.is_authenticated():
+        request.session['location'] = "Earth"
     return render(request, 'store.html', context)
 
