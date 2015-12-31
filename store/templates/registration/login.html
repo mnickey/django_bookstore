@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <form method="post" action=".">
     {% csrf_token %}
     {{form.as_p}}
@@ -7,3 +10,7 @@
 <a href="{% url 'social:begin' 'facebook' %}">Log in with Facebook</a>
 
 <a href="{% url 'social:begin' 'google-oauth2' %}">Log in with Google</a>
+
+ <a href="{% url 'social:begin' 'twitter' %}">Login with Twitter</a>
+
+{% endblock %}}

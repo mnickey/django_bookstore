@@ -80,6 +80,7 @@ WSGI_APPLICATION = 'django_bookstore.wsgi.application'
 AUTHENTICATION_BACKENDS = (
     'social.backends.facebook.FacebookOAuth2',
     'social.backends.google.GoogleOAuth2',
+    'social.backends.twitter.TwitterOAuth',
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -134,8 +135,16 @@ SOCIAL_AUTH_FACEBOOK_SECRET = '003148fdfb5fd95b8540e772d9465110'
 # Social Auth -- Google
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '13596491260-j3cqs6qhg7g64bt2iq7nujn9sr33ic8u.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'dJaGfmxizgJu3dlpN1pTkn2L'
+
 SOCIAL_AUTH_GOOGLE_PLUS_KEY = '13596491260-j3cqs6qhg7g64bt2iq7nujn9sr33ic8u.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_PLUS_SECRET = 'dJaGfmxizgJu3dlpN1pTkn2L'
 
+# Social Auth -- Twitter
+SOCIAL_AUTH_TWITTER_KEY = 'cca9q3fIjMraijLBAW3TVdrUT'
+SOCIAL_AUTH_TWITTER_SECRET = 'nm09qCP1RTYVzKA2emM2WOek0NMtQUXInaRT94ySAeVmyrCCrA'
+
 # Redirect URI History
 # http://localhost:8000/complete/google-oauth2/
+
+# Twitter complete uri
+# http://localhost:8000/complete/twitter/
